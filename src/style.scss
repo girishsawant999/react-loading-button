@@ -1,0 +1,13 @@
+$primary-color: #00bcd4;
+
+body {
+  background-color: whitesmoke;
+}
+div {
+  color: white;
+}
+
+.red-div {
+  background-color: $primary-color;
+  display: flex;
+}
