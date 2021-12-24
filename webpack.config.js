@@ -2,7 +2,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 
 const isProd = process.env.NODE_ENV === 'production';
-console.log(`Mode - ${process.env.NODE_ENV}`);
+const enviroment = isProd ? 'production' : 'development';
+console.log(`Mode - ${enviroment}`);
 
 module.exports = {
   entry: './src/index.jsx?',
@@ -17,7 +18,7 @@ module.exports = {
   externals: {
     react: 'commonjs react',
   },
-  mode: isProd ? 'production' : 'development',
+  mode: enviroment,
   devtool: isProd ? false : 'inline-source-map',
   optimization: {
     minimize: isProd,
