@@ -1,6 +1,6 @@
 {
   "name": "@girishsawant999/react-loading-button",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A react loading button for the web",
   "main": "dist/index.js",
   "files": [

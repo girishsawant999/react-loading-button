@@ -49,7 +49,7 @@ Button.defaultProps = {
   type: 'button',
   loading: false,
   disabled: false,
-  buttonType: 'danger',
+  buttonType: 'primary',
 };
 
 Button.propTypes = {
