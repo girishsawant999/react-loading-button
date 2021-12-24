@@ -1,7 +1,7 @@
 {
   "name": "@girishsawant999/react-loading-button",
   "version": "1.0.0",
-  "description": "",
+  "description": "A react loading button for the web",
   "main": "dist/index.js",
   "scripts": {
     "setup": "npm install && cd example && npm install",
@@ -20,9 +20,12 @@
   "keywords": [
     "react",
     "package",
-    "library"
+    "library",
+    "loading button",
+    "react-loading-button",
+    "girishsawant999"
   ],
-  "author": "",
+  "author": "Girish Sawant",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/girishsawant999/react-loading-button/issues"
