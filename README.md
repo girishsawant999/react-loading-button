@@ -5,8 +5,6 @@
 
 <h2 align="center">React Loading Button</h2>
 
----
-
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)](#)
