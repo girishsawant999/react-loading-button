@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import 'react-app-polyfill/ie11';
 import ReactDOM from 'react-dom';
-import Button from '../src';
+import Button from '@girishsawant999/react-loading-button';
 
 const App = () => {
-  const [loading, setloading] = useState(true);
+  const [loading, setloading] = useState(false);
 
   const toggleLoading = () => {
     setloading(true);
