@@ -1,8 +1,11 @@
 {
   "name": "@girishsawant999/react-loading-button",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A react loading button for the web",
   "main": "dist/index.js",
+  "files": [
+    "./dist/"
+  ],
   "scripts": {
     "setup": "npm install && cd example && npm install",
     "build:dev": "webpack",
