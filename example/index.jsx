@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import Button from '../src';
 
 const App = () => {
-  const [loading, setloading] = useState(false);
+  const [loading, setloading] = useState(true);
 
   const toggleLoading = () => {
     setloading(true);
@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div>
       <Button onClick={toggleLoading} loading={loading}>
-        Hello World
+        React loading button
       </Button>
     </div>
   );

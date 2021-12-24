@@ -474,7 +474,7 @@ var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
 var _src = require("../src");
 var _srcDefault = parcelHelpers.interopDefault(_src);
 const App = ()=>{
-    const [loading, setloading] = _react.useState(false);
+    const [loading, setloading] = _react.useState(true);
     const toggleLoading = ()=>{
         setloading(true);
         setTimeout(()=>{
@@ -497,7 +497,7 @@ const App = ()=>{
             columnNumber: 7
         },
         __self: undefined
-    }, "Hello World")));
+    }, "React loading button")));
 };
 _reactDomDefault.default.render(/*#__PURE__*/ _reactDefault.default.createElement(App, {
     __source: {
