@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img height="60" src="./readme-logo.png" alt="Project logo"></a>
+ <img height="60" src="./.github/readme/logo.png" alt="Project logo"></a>
 </p>
 
 <h2 align="center">React Loading Button</h2>
