@@ -1,13 +1,89 @@
-$primary-color: #00bcd4;
+$primary-color: #0070f3;
+$secondary-color: #f0f0f0;
+$danger-color: #f5365c;
+$success-color: #2dce89;
+$info-color: #2196f3;
+$warning-color: #fb6340;
+$dark-color: #2d3436;
+$light-color: #f4f4f4;
+$white-color: #fff;
+$black-color: #000;
+$gray-color: #9e9e9e;
+$gray-light-color: #fafafa;
+$gray-dark-color: #212121;
 
-body {
-  background-color: whitesmoke;
-}
-div {
-  color: white;
+@mixin glassmorph() {
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 50%);
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  color: $gray-dark-color;
+  text-shadow: $gray-light-color 0px 0px 0.25rem;
 }
 
-.red-div {
-  background-color: $primary-color;
+button {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  transition: transform 200ms;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.25rem;
+  outline: none;
+  text-shadow: $gray-color 0px 0px 0.25rem;
+
+  &.glass {
+    @include glassmorph;
+  }
+
+  &.primary {
+    background-color: $primary-color;
+    color: $white-color;
+  }
+
+  &.secondary {
+    background-color: $secondary-color;
+    color: $black-color;
+  }
+
+  &.danger {
+    background-color: $danger-color;
+    color: $white-color;
+  }
+  &.success {
+    background-color: $success-color;
+    color: $white-color;
+  }
+  &.info {
+    background-color: $info-color;
+    color: $white-color;
+  }
+  &.warning {
+    background-color: $warning-color;
+    color: $white-color;
+  }
+  &.dark {
+    background-color: $dark-color;
+    color: $white-color;
+  }
+  &.light {
+    background-color: $light-color;
+    color: $black-color;
+  }
+
+  > span {
+    margin: 0 2px;
+  }
+
+  &:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    transform: scale(0.98);
+  }
 }
