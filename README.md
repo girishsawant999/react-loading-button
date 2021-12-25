@@ -11,7 +11,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/girishsawant999/react-loading-button.svg)](https://github.com/girishsawant999/react-loading-button/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/girishsawant999/react-loading-button.svg)](https://github.com/girishsawant999/react-loading-button/pulls)
 
-[![Build ](https://img.shields.io/github/workflow/status/girishsawant999/react-loading-button/CI/main)](#)
+[![Build ](https://img.shields.io/github/workflow/status/girishsawant999/react-loading-button/CI/main)](https://github.com/girishsawant999/react-loading-button/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
