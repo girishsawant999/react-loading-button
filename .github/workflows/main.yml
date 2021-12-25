@@ -3,6 +3,7 @@ on: [push]
 jobs:
   build:
     name: Build, lint, and test on Node ${{ matrix.node }} and ${{ matrix.os }}
+    if: "!contains(github.event.commits[0].message, '[skip ci]')"
 
     runs-on: ${{ matrix.os }}
     strategy:
