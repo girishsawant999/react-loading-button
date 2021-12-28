@@ -34,3 +34,4 @@ __snapshots__
 # System Files
 .DS_Store
 Thumbs.db
+example/dist
