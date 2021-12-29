@@ -80,10 +80,11 @@ button {
 
   &:disabled {
     opacity: 0.8;
+    transform: scale(0.98);
     cursor: not-allowed;
   }
 
-  &:hover:not(:disabled) {
+  &:hover {
     transform: scale(0.98);
   }
 }

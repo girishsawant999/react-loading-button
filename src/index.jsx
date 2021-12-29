@@ -1,6 +1,6 @@
 import propTypes from 'prop-types';
 import React from 'react';
-import { CircleNotchSolid } from './Components/Loaders';
+import Loaders from './Components/Loaders';
 import './style.scss';
 
 const When = ({ isTrue, children }) => {
@@ -19,7 +19,7 @@ const removeProps = (props, ...args) => {
 const classes = (...args) => args.join(' ').trim();
 
 const Button = function (props) {
-  const { children, disabled, loading, buttonType, className } = props;
+  const { children, disabled, loading, buttonType, className, loader } = props;
   const buttonProps = removeProps(
     props,
     'children',
@@ -27,6 +27,7 @@ const Button = function (props) {
     'loading',
     'buttonType',
     'className',
+    'loader',
   );
 
   return (
@@ -37,7 +38,7 @@ const Button = function (props) {
     >
       <When isTrue={loading}>
         <span>
-          <CircleNotchSolid />
+          <Loaders loader={loader} />
         </span>
       </When>
       <span>{children}</span>
@@ -50,6 +51,7 @@ Button.defaultProps = {
   loading: false,
   disabled: false,
   buttonType: 'primary',
+  loader: 'spinner',
 };
 
 Button.propTypes = {
@@ -67,6 +69,7 @@ Button.propTypes = {
     'dark',
     'glass',
   ]),
+  loader: propTypes.oneOf(['spinner', 'circle-notch']),
 };
 
 export default Button;

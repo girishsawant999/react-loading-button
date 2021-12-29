@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CircleNotchSolid = function (props) {
+const CircleNotch = function (props) {
   return (
     <svg
       aria-hidden="true"
@@ -33,4 +33,4 @@ const CircleNotchSolid = function (props) {
   );
 };
 
-export default CircleNotchSolid;
+export default CircleNotch;

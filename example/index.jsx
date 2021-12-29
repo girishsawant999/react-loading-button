@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div>
-      <Button onClick={toggleLoading} loading={loading}>
+      <Button onClick={toggleLoading} loading={loading} loader="circle-notch">
         React loading button
       </Button>
     </div>
