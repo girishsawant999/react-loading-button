@@ -1,2 +1,4 @@
 __tests__
 __specs__
+webpack.config.js
+dist
