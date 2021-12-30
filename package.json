@@ -7,15 +7,15 @@
     "./dist/"
   ],
   "scripts": {
-    "dev": "npm run build:dev && cd ./example && npm start",
+    "dev": "npm run build:dev && cd ./demo && npm start",
     "build:dev": "webpack",
     "build": "cross-env NODE_ENV=production webpack",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
     "lint": "cross-env eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
     "prettier": "cross-env prettier 'src/**/*.{js,jsx,ts,tsx,json,md,css,scss,sass,html}' --write",
-    "setup": "npm install && cd example && npm install",
-    "setup:update": "ncu -u && cd example && ncu -u && cd .. && npm run setup"
+    "setup": "npm install && cd demo && npm install",
+    "setup:update": "ncu -u && cd demo && ncu -u && cd .. && npm run setup"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/girishsawant999/react-loading-button/issues"
   },
-  "homepage": "https://github.com/girishsawant999/react-loading-button#readme",
+  "homepage": "https://girishsawant999.github.io/react-loading-button/",
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",

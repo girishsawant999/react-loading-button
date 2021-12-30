@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img height="60" src="./.github/readme/logo.png" alt="Project logo"></a>
+ <img height="120" src="./.github/readme/intro.png" alt="Project logo"></a>
 </p>
 
 <h2 align="center">React Loading Button</h2>
@@ -20,6 +20,12 @@
 
 <p align="center">
 A small react loading button component for getting flexibility to show other content instead of full screen loader while submitting API request.
+</p>
+
+<p align="center">
+  <a href="https://girishsawant999.github.io/react-loading-button/" target="_blank">
+    Open React loading Button Playground
+  </a>
 </p>
 
 ## 📝 Usage

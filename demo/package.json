@@ -1,10 +1,11 @@
 {
-  "name": "example",
+  "name": "demo",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html --no-source-maps"
+    "build": "parcel build index.html",
+    "build:page": "parcel build index.html --dist-dir ../docs --no-source-maps --public-url ."
   },
   "dependencies": {
     "@girishsawant999/react-loading-button": "^0.2.4",
