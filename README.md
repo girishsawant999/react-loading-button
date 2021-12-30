@@ -24,7 +24,7 @@ A small react loading button component for getting flexibility to show other con
 
 <p align="center">
   <a href="https://girishsawant999.github.io/react-loading-button/" target="_blank">
-    Open React loading Button Playground
+    React loading Button Playground
   </a>
 </p>
 
@@ -47,3 +47,14 @@ import Button from '@girishsawant999/react-loading-button';
 ```
 
 That's all and you are ready to go.
+
+## 📃 Props
+
+| Prop       | Types                                                                                                                                      | Description                                                 |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
+| loading    | Boolean<br>Default: `false`                                                                                                                | Added loader in button when value is `true`                 |
+| buttonType | `'primary - secondary - danger - success - warning - info - light - dark - glass`<br/>Default: `primary`                                   | Set type of layout to button you can check it on playground |
+| loader     | `spinner - circle-notch - three-dots - ball-triangle - bars - filling-box - puff - half-circles - circular-stripes`<br/>Default: `spinner` | Set type of loader in button while loading                  |
+|            |                                                                                                                                            |                                                             |
+
+Additionally you can pass any other props to button
