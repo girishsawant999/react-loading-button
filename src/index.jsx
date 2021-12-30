@@ -69,7 +69,17 @@ Button.propTypes = {
     'dark',
     'glass',
   ]),
-  loader: propTypes.oneOf(['spinner', 'circle-notch']),
+  loader: propTypes.oneOf([
+    'spinner',
+    'circle-notch',
+    'three-dots',
+    'ball-triangle',
+    'bars',
+    'filling-box',
+    'puff',
+    'half-circles',
+    'circular-stripes',
+  ]),
 };
 
 export default Button;
