@@ -63,4 +63,84 @@ describe('Button: Component Basis tests', () => {
     expect(btn.classList.contains('danger')).toBe(true);
     ReactDOM.unmountComponentAtNode(div);
   });
+
+  it('renders with loader prop value circle-notch', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Button loader="circle-notch" loading={true} />, div);
+    const btn = div.querySelector('button');
+    expect(btn.getAttribute('disabled'));
+    expect(div.querySelector('svg[data-icon="circle-notch"]'));
+    ReactDOM.unmountComponentAtNode(div);
+  });
+  it('renders with loader prop value puff', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Button loader="puff" loading={true} />, div);
+    const btn = div.querySelector('button');
+    expect(btn.getAttribute('disabled'));
+    expect(div.querySelector('svg[data-icon="puff"]'));
+    ReactDOM.unmountComponentAtNode(div);
+  });
+
+  it('renders with loader prop value spinner', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Button loader="spinner" loading={true} />, div);
+    const btn = div.querySelector('button');
+    expect(btn.getAttribute('disabled'));
+    expect(div.querySelector('svg[data-icon="spinner"]'));
+    ReactDOM.unmountComponentAtNode(div);
+  });
+
+  it('renders with loader prop value circular-stripes', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Button loader="circular-stripes" loading={true} />, div);
+    const btn = div.querySelector('button');
+    expect(btn.getAttribute('disabled'));
+    expect(div.querySelector('svg[data-icon="circular-stripes"]'));
+    ReactDOM.unmountComponentAtNode(div);
+  });
+
+  it('renders with loader prop value ball-triangle', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Button loader="ball-triangle" loading={true} />, div);
+    const btn = div.querySelector('button');
+    expect(btn.getAttribute('disabled'));
+    expect(div.querySelector('svg[data-icon="ball-triangle"]'));
+    ReactDOM.unmountComponentAtNode(div);
+  });
+
+  it('renders with loader prop value bars', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Button loader="bars" loading={true} />, div);
+    const btn = div.querySelector('button');
+    expect(btn.getAttribute('disabled'));
+    expect(div.querySelector('svg[data-icon="bars"]'));
+    ReactDOM.unmountComponentAtNode(div);
+  });
+
+  it('renders with loader prop value filling-box', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Button loader="filling-box" loading={true} />, div);
+    const btn = div.querySelector('button');
+    expect(btn.getAttribute('disabled'));
+    expect(div.querySelector('svg[data-icon="filling-box"]'));
+    ReactDOM.unmountComponentAtNode(div);
+  });
+
+  it('renders with loader prop value half-circles', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Button loader="half-circles" loading={true} />, div);
+    const btn = div.querySelector('button');
+    expect(btn.getAttribute('disabled'));
+    expect(div.querySelector('svg[data-icon="half-circles"]'));
+    ReactDOM.unmountComponentAtNode(div);
+  });
+
+  it('renders with loader prop value three-dots', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Button loader="three-dots" loading={true} />, div);
+    const btn = div.querySelector('button');
+    expect(btn.getAttribute('disabled'));
+    expect(div.querySelector('svg[data-icon="three-dots"]'));
+    ReactDOM.unmountComponentAtNode(div);
+  });
 });
