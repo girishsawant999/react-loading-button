@@ -1,14 +1,29 @@
 import propTypes from 'prop-types';
-import React from 'react';
-import BallTriangle from './BallTriangle';
-import Bars from './Bars';
-import CircleNotch from './CircleNotch';
-import Puff from './Puff';
-import HalfCircles from './HalfCircles';
-import Spinner from './Spinner';
-import ThreeDots from './ThreeDots';
-import FillingBox from './FillingBox';
-import CircularStripes from './CircularStripes';
+import React, { lazy, Suspense } from 'react';
+
+const BallTriangle = lazy(() =>
+  import(/* webpackChunkName: "BallTriangle" */ './BallTriangle'),
+);
+const Bars = lazy(() => import(/* webpackChunkName: "Bars" */ './Bars'));
+const Puff = lazy(() => import(/* webpackChunkName: "Puff" */ './Puff'));
+const HalfCircles = lazy(() =>
+  import(/* webpackChunkName: "HalfCircles" */ './HalfCircles'),
+);
+const FillingBox = lazy(() =>
+  import(/* webpackChunkName: "FillingBox" */ './FillingBox'),
+);
+const CircularStripes = lazy(() =>
+  import(/* webpackChunkName: "CircularStripes" */ './CircularStripes'),
+);
+const Spinner = lazy(() =>
+  import(/* webpackChunkName: "Spinner" */ './Spinner'),
+);
+const CircleNotch = lazy(() =>
+  import(/* webpackChunkName: "CircleNotch" */ './CircleNotch'),
+);
+const ThreeDots = lazy(() =>
+  import(/* webpackChunkName: "ThreeDots" */ './ThreeDots'),
+);
 
 const Loaders = ({ loader }) => {
   switch (loader) {
@@ -43,4 +58,11 @@ Loaders.propTypes = {
   loader: propTypes.string.isRequired,
 };
 
-export default Loaders;
+const withSuspense = (Component) => (props) =>
+  (
+    <Suspense fallback={null}>
+      <Component {...props} />
+    </Suspense>
+  );
+
+export default withSuspense(Loaders);

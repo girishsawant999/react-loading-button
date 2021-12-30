@@ -47,7 +47,6 @@ const Button = function (props) {
 };
 
 Button.defaultProps = {
-  type: 'button',
   loading: false,
   disabled: false,
   buttonType: 'primary',

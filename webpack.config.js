@@ -8,9 +8,12 @@ console.log(`Mode - ${enviroment}`);
 module.exports = {
   entry: './src/index.jsx?',
   output: {
+    clean: true,
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'commonjs2',
+    chunkFormat: 'commonjs',
+    chunkFilename: '[name].[chunkhash].js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
