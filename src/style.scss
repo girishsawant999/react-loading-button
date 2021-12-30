@@ -18,8 +18,7 @@ $gray-dark-color: #212121;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
-  color: $gray-dark-color;
-  text-shadow: $gray-light-color 0px 0px 0.25rem;
+  color: $white-color;
 }
 
 button {
@@ -33,7 +32,6 @@ button {
   border: none;
   border-radius: 0.25rem;
   outline: none;
-  text-shadow: $gray-color 0px 0px 0.25rem;
 
   &.glass {
     @include glassmorph;
@@ -75,7 +73,8 @@ button {
   }
 
   > span {
-    margin: 0 2px;
+    margin: 0 0.2em;
+    display: flex;
   }
 
   &:disabled {
