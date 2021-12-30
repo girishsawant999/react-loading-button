@@ -50,11 +50,10 @@ That's all and you are ready to go.
 
 ## 📃 Props
 
-| Prop       | Types                                                                                                                                      | Description                                                 |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
-| loading    | Boolean<br>Default: `false`                                                                                                                | Added loader in button when value is `true`                 |
-| buttonType | `'primary - secondary - danger - success - warning - info - light - dark - glass`<br/>Default: `primary`                                   | Set type of layout to button you can check it on playground |
-| loader     | `spinner - circle-notch - three-dots - ball-triangle - bars - filling-box - puff - half-circles - circular-stripes`<br/>Default: `spinner` | Set type of loader in button while loading                  |
-|            |                                                                                                                                            |                                                             |
+| Prop       | Types                                                                                                                                              | Description                                                 |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| loading    | Boolean<br>Default: `false`                                                                                                                        | Added loader in button when value is `true`                 |
+| buttonType | `primary`, `secondary`, `danger`, `success`, `warning`, `info`, `light`, `dark`, `glass`<br/>Default: `primary`                                    | Set type of layout to button you can check it on playground |
+| loader     | `spinner`, `circle-notch`, `three-dots`, `ball-triangle`, `bars`, `filling-box`, `puff`, `half-circles`, `circular-stripes`<br/>Default: `spinner` | Set type of loader in button while loading                  |
 
 Additionally you can pass any other props to button
