@@ -77,7 +77,7 @@ describe('Button: Component Basis tests', () => {
     );
     const btn = div.querySelector('button');
     expect(btn).toBeDisabled();
-    await delay(50);
+    await delay(200);
     expect(div.querySelector('svg[data-icon="circle-notch"]')).toBeTruthy();
     ReactDOM.unmountComponentAtNode(div);
   });
@@ -91,7 +91,7 @@ describe('Button: Component Basis tests', () => {
       div
     );
     const btn = div.querySelector('button');
-    await delay(50);
+    await delay(200);
     expect(btn).toBeDisabled();
     expect(div.querySelector('svg[data-icon="puff"]')).toBeTruthy();
     ReactDOM.unmountComponentAtNode(div);
@@ -106,7 +106,7 @@ describe('Button: Component Basis tests', () => {
       div
     );
     const btn = div.querySelector('button');
-    await delay(50);
+    await delay(200);
     expect(btn).toBeDisabled();
     expect(div.querySelector('svg[data-icon="spinner"]')).toBeTruthy();
     ReactDOM.unmountComponentAtNode(div);
@@ -121,7 +121,7 @@ describe('Button: Component Basis tests', () => {
       div
     );
     const btn = div.querySelector('button');
-    await delay(50);
+    await delay(200);
 
     expect(btn).toBeDisabled();
     expect(div.querySelector('svg[data-icon="circular-stripes"]')).toBeTruthy();
@@ -137,7 +137,7 @@ describe('Button: Component Basis tests', () => {
       div
     );
     const btn = div.querySelector('button');
-    await delay(50);
+    await delay(200);
 
     expect(btn).toBeDisabled();
     expect(div.querySelector('svg[data-icon="ball-triangle"]')).toBeTruthy();
@@ -153,7 +153,7 @@ describe('Button: Component Basis tests', () => {
       div
     );
     const btn = div.querySelector('button');
-    await delay(50);
+    await delay(200);
 
     expect(btn).toBeDisabled();
     expect(div.querySelector('svg[data-icon="bars"]')).toBeTruthy();
@@ -169,7 +169,7 @@ describe('Button: Component Basis tests', () => {
       div
     );
     const btn = div.querySelector('button');
-    await delay(50);
+    await delay(200);
 
     expect(btn).toBeDisabled();
     expect(div.querySelector('svg[data-icon="filling-box"]')).toBeTruthy();
@@ -185,7 +185,7 @@ describe('Button: Component Basis tests', () => {
       div
     );
     const btn = div.querySelector('button');
-    await delay(50);
+    await delay(200);
 
     expect(btn).toBeDisabled();
     expect(div.querySelector('svg[data-icon="half-circles"]')).toBeTruthy();
@@ -201,7 +201,7 @@ describe('Button: Component Basis tests', () => {
       div
     );
     const btn = div.querySelector('button');
-    await delay(50);
+    await delay(200);
 
     expect(btn).toBeDisabled();
     expect(div.querySelector('svg[data-icon="three-dots"]')).toBeTruthy();
