@@ -1,0 +1,121 @@
+button {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  outline: none;
+  padding: 0.5em 1em;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+button.glass {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: hsla(0, 0%, 100%, 0.1);
+  border-left: 1px solid hsla(0, 0%, 100%, 0.5);
+  border-top: 1px solid hsla(0, 0%, 100%, 0.5);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+button.primary {
+  background-color: #0070f3;
+  color: #fff;
+}
+button.secondary {
+  background-color: #f0f0f0;
+  color: #000;
+}
+button.danger {
+  background-color: #f5365c;
+  color: #fff;
+}
+button.success {
+  background-color: #2dce89;
+  color: #fff;
+}
+button.info {
+  background-color: #2196f3;
+  color: #fff;
+}
+button.warning {
+  background-color: #fb6340;
+  color: #fff;
+}
+button.dark {
+  background-color: #2d3436;
+  color: #fff;
+}
+button.light {
+  background-color: #f4f4f4;
+  color: #000;
+}
+button > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0.2em;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+button:disabled,
+button:hover {
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+body {
+  align-items: center;
+  background: #161623;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+body:before {
+  background: linear-gradient(red, #f0f);
+  clip-path: circle(30% at right 70%);
+}
+body:after,
+body:before {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body:after {
+  background: linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(20% at 10% 10%);
+}
+body .main-container {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+body .main-container div {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 800px;
+  row-gap: 8px;
+  z-index: 1;
+}
+body .main-container div button:disabled {
+  opacity: 1;
+}

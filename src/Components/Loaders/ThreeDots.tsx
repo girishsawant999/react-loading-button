@@ -1,6 +1,7 @@
 import React from 'react';
+import { ILoaders } from './Loaders';
 
-function ThreeDots(props) {
+const ThreeDots = (props: ILoaders): JSX.Element => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -79,6 +80,6 @@ function ThreeDots(props) {
       </circle>
     </svg>
   );
-}
+};
 
 export default ThreeDots;

@@ -1,20 +1,28 @@
 {
   "name": "@girishsawant999/react-loading-button",
-  "version": "0.2.5",
-  "description": "A react loading button for the web",
+  "version": "1.0.3",
+  "description": "A react component for loading button with animation",
+  "type": "module",
+  "source": "src/index.tsx",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "targets": {
+    "main": {
+      "optimize": true
+    }
+  },
   "files": [
-    "./dist/"
+    "dist"
   ],
   "scripts": {
-    "dev": "npm run build:dev && cd ./demo && npm start",
-    "build:dev": "webpack",
-    "build": "cross-env NODE_ENV=production webpack",
+    "watch": "parcel",
+    "build": "cross-env rm -rf dist && parcel build --no-source-maps",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
-    "lint": "cross-env eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
-    "prettier": "cross-env prettier 'src/**/*.{js,jsx,ts,tsx,json,md,css,scss,sass,html}' --write",
-    "setup": "npm install && cd demo && npm install",
+    "lint": "cross-env eslint './**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "cross-env eslint './**/*.{js,jsx,ts,tsx}' --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json,html,scss,sass}' --config ./.prettierrc --ignore-path ./.gitignore",
+    "setup": "npm install && husky install && cd demo && npm install",
     "setup:update": "ncu -u && cd demo && ncu -u && cd .. && npm run setup"
   },
   "repository": {
@@ -24,9 +32,12 @@
   "keywords": [
     "react",
     "package",
+    "typescript",
+    "module",
     "library",
-    "loading button",
     "react-loading-button",
+    "react-loading-button-component",
+    "react-loading-button-library",
     "girishsawant999"
   ],
   "author": "Girish Sawant",
@@ -34,63 +45,64 @@
   "bugs": {
     "url": "https://github.com/girishsawant999/react-loading-button/issues"
   },
-  "homepage": "https://girishsawant999.github.io/react-loading-button/",
+  "homepage": "https://girishsawant999.github.io/react-loading-button",
   "devDependencies": {
-    "@babel/core": "^7.16.5",
-    "@babel/preset-env": "^7.16.5",
-    "@babel/preset-react": "^7.16.5",
-    "autoprefixer": "^10.4.0",
-    "babel-jest": "^27.4.5",
-    "babel-loader": "^8.2.3",
-    "clean-webpack-plugin": "^4.0.0",
+    "@parcel/packager-ts": "^2.0.1",
+    "@parcel/transformer-sass": "^2.0.1",
+    "@parcel/transformer-typescript-types": "^2.0.1",
+    "@size-limit/preset-app": "^7.0.5",
+    "@size-limit/preset-big-lib": "^7.0.5",
+    "@size-limit/preset-small-lib": "^7.0.5",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@types/jest": "^27.4.0",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "autoprefixer": "^10.4.1",
     "cross-env": "^7.0.3",
-    "css-loader": "^6.5.1",
-    "cssnano": "^5.0.14",
-    "eslint": "^8.5.0",
-    "eslint-config-airbnb": "^19.0.4",
+    "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-config-react-app": "^7.0.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-jest": "^25.3.4",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.5",
-    "lint-staged": "^12.1.4",
-    "mini-css-extract-plugin": "^2.4.5",
-    "npm-check-updates": "^12.0.5",
-    "postcss": "^8.4.5",
-    "postcss-loader": "^6.2.1",
+    "jest-environment-jsdom-global": "^3.0.0",
+    "jest-localstorage-mock": "^2.4.18",
+    "lint-staged": "^12.1.5",
+    "npm-check-updates": "^12.1.0",
+    "parcel": "^2.0.1",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "sass": "^1.45.1",
-    "sass-loader": "^12.4.0",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.7.1"
+    "size-limit": "^7.0.5",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
   },
   "peerDependencies": {
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,md,css,scss,sass,html}": [
-      "prettier --write"
+    "*.{js,jsx,ts,tsx,css,md,json,html,scss,sass}": [
+      "prettier --write --config ./.prettierrc --ignore-path ./.gitignore"
     ],
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint  --fix-dry-run"
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
     ]
   },
-  "dependencies": {
-    "prop-types": "^15.8.0"
-  }
+  "size-limit": [
+    {
+      "path": "./dist/*",
+      "limit": "500 ms",
+      "webpack": false
+    }
+  ],
+  "browserslist": [
+    "> 0.2%",
+    "last 2 versions",
+    "not ie < 10"
+  ]
 }

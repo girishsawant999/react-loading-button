@@ -1,6 +1,7 @@
 import React from 'react';
+import { ILoaders } from './Loaders';
 
-const CircleNotch = function (props) {
+const CircleNotch = (props: ILoaders): JSX.Element => {
   return (
     <svg
       aria-hidden="true"

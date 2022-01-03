@@ -1,0 +1,27 @@
+{
+  "coveragePathIgnorePatterns": ["<rootDir>/src/index.tsx", "<rootDir>/src/polyfills.ts"],
+  "globals": {
+    "ts-jest": {
+      "isolatedModules": true
+    }
+  },
+  "moduleDirectories": ["node_modules"],
+  "moduleNameMapper": {
+    "\\.s?css$": "identity-obj-proxy",
+    "^@src[/](.+)": "<rootDir>/src/$1",
+    "^node_modules[/](.+)": "<rootDir>/node_modules/$1"
+  },
+  "setupFiles": ["jest-localstorage-mock"],
+  "setupFilesAfterEnv": ["@testing-library/jest-dom/extend-expect"],
+  "testEnvironment": "jest-environment-jsdom-global",
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*(*.)@(spec|test).{js,jsx,ts,tsx}"
+  ],
+  "testURL": "http://localhost",
+  "transform": {
+    "^.+\\.(ts|tsx|js|jsx)$": "ts-jest",
+    "^.+\\.s?css$": "./utils/style-transform.cjs",
+    "^.+\\.(png|jpg|jpeg|git|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./utils/file-transform.cjs"
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
+import { ILoaders } from './Loaders';
 
-function HalfCircles(props) {
+const HalfCircles = (props: ILoaders): JSX.Element => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -46,6 +47,6 @@ function HalfCircles(props) {
       </path>
     </svg>
   );
-}
+};
 
 export default HalfCircles;
