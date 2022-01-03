@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import 'react-app-polyfill/ie11';
 import ReactDOM from 'react-dom';
-import Button from '../dist';
+import Button from 'dist';
 import './style.scss';
 
-const App = () => {
+const App = (): JSX.Element => {
   const [loading, setloading] = useState(true);
 
-  const toggleLoading = () => {
+  const toggleLoading = (): void => {
     setloading(true);
     setTimeout(() => {
       setloading(false);
@@ -30,12 +30,7 @@ const App = () => {
           Secondary Circle-Notch
         </Button>
 
-        <Button
-          onClick={toggleLoading}
-          loading={loading}
-          buttonType="danger"
-          loader="three-dots"
-        >
+        <Button onClick={toggleLoading} loading={loading} buttonType="danger" loader="three-dots">
           Danger Three-Dots
         </Button>
 
@@ -48,36 +43,16 @@ const App = () => {
           Success Ball-Triangle
         </Button>
 
-        <Button
-          onClick={toggleLoading}
-          loading={loading}
-          buttonType="warning"
-          loader="bars"
-        >
+        <Button onClick={toggleLoading} loading={loading} buttonType="warning" loader="bars">
           Warning Bars
         </Button>
-        <Button
-          onClick={toggleLoading}
-          loading={loading}
-          buttonType="info"
-          loader="half-circles"
-        >
+        <Button onClick={toggleLoading} loading={loading} buttonType="info" loader="half-circles">
           Info Half-Circles
         </Button>
-        <Button
-          onClick={toggleLoading}
-          loading={loading}
-          buttonType="light"
-          loader="puff"
-        >
+        <Button onClick={toggleLoading} loading={loading} buttonType="light" loader="puff">
           Light Puff
         </Button>
-        <Button
-          onClick={toggleLoading}
-          loading={loading}
-          buttonType="dark"
-          loader="filling-box"
-        >
+        <Button onClick={toggleLoading} loading={loading} buttonType="dark" loader="filling-box">
           Dark Filling-Box
         </Button>
         <Button

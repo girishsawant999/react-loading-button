@@ -1,6 +1,7 @@
 import React from 'react';
+import { ILoaders } from './Loaders';
 
-function FillingBox(props) {
+const FillingBox = (props: ILoaders): JSX.Element => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -39,6 +40,6 @@ function FillingBox(props) {
       </rect>
     </svg>
   );
-}
+};
 
 export default FillingBox;

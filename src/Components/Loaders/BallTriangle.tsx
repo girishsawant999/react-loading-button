@@ -1,6 +1,7 @@
 import React from 'react';
+import { ILoaders } from './Loaders';
 
-function BallTriangle(props) {
+const BallTriangle = (props: ILoaders): JSX.Element => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,12 +12,7 @@ function BallTriangle(props) {
       viewBox="0 0 57 57"
       {...props}
     >
-      <g
-        fill="none"
-        fillRule="evenodd"
-        strokeWidth="5"
-        transform="translate(1 1)"
-      >
+      <g fill="none" fillRule="evenodd" strokeWidth="5" transform="translate(1 1)">
         <circle cx="5" cy="50" r="5">
           <animate
             attributeName="cy"
@@ -80,6 +76,6 @@ function BallTriangle(props) {
       </g>
     </svg>
   );
-}
+};
 
 export default BallTriangle;

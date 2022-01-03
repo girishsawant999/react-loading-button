@@ -1,6 +1,7 @@
 import React from 'react';
+import { ILoaders } from './Loaders';
 
-function Bars(props) {
+const Bars = (props: ILoaders): JSX.Element => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -103,6 +104,6 @@ function Bars(props) {
       </rect>
     </svg>
   );
-}
+};
 
 export default Bars;

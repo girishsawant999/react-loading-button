@@ -1,6 +1,7 @@
 import React from 'react';
+import { ILoaders } from './Loaders';
 
-function CircularStripes(props) {
+const CircularStripes = (props: ILoaders): JSX.Element => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -111,6 +112,6 @@ function CircularStripes(props) {
       </g>
     </svg>
   );
-}
+};
 
 export default CircularStripes;
