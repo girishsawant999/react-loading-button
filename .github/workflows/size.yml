@@ -1,7 +1,8 @@
 name: Size
-on: [pull_request]
-branches-ignore:
-  - 'chore/*'
+on:
+  pull_request:
+    branches-ignore:
+      - 'chore/*'
 jobs:
   size:
     runs-on: ubuntu-latest
