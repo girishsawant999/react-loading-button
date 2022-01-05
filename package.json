@@ -1,6 +1,6 @@
 {
   "name": "@girishsawant999/react-loading-button",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A react component for loading button with animation",
   "type": "module",
   "source": "src/index.tsx",
