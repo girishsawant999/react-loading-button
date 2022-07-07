@@ -1,0 +1,128 @@
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.25rem;
+  outline: none;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  transition: -webkit-transform 0.2s, -webkit-transform 0.2s, -webkit-transform 0.2s,
+    -webkit-transform 0.2s, transform 0.2s;
+  display: -ms-flexbox;
+  display: flex;
+}
+button.glass {
+  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+button.primary {
+  color: #fff;
+  background-color: #0070f3;
+}
+button.secondary {
+  color: #000;
+  background-color: #f0f0f0;
+}
+button.danger {
+  color: #fff;
+  background-color: #f5365c;
+}
+button.success {
+  color: #fff;
+  background-color: #2dce89;
+}
+button.info {
+  color: #fff;
+  background-color: #2196f3;
+}
+button.warning {
+  color: #fff;
+  background-color: #fb6340;
+}
+button.dark {
+  color: #fff;
+  background-color: #2d3436;
+}
+button.light {
+  color: #000;
+  background-color: #f4f4f4;
+}
+button > span {
+  margin: 0 0.2em;
+  display: -ms-flexbox;
+  display: flex;
+}
+button:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+button:hover {
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+body {
+  min-height: 100vh;
+  background: #161623;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+}
+body:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: circle(30% at right 70%);
+  clip-path: circle(30% at right 70%);
+  background: linear-gradient(red, #f0f);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: circle(20% at 10% 10%);
+  clip-path: circle(20% at 10% 10%);
+  background: linear-gradient(#2196f3, #e91e63);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .main-container {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .main-container div {
+  max-width: 800px;
+  z-index: 1;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px 4px;
+  display: grid;
+}
+body .main-container div button:disabled {
+  opacity: initial;
+}
