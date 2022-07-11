@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://girishsawant999.github.io/react-loading-button/" rel="noopener">
- <img height="120" src="./.github/readme/intro.png" alt="Project logo"></a>
+ <img height="120" src="./.github/readme/intro.gif" alt="Project logo"></a>
 </p>
 
 <h2 align="center">React Loading Button</h2>
