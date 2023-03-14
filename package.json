@@ -54,8 +54,8 @@
     "@size-limit/preset-small-lib": "^7.0.8",
     "@testing-library/jest-dom": "^5.16.4",
     "@types/jest": "^28.1.4",
-    "@types/react": "^16.0.36",
-    "@types/react-dom": "^16.0.36",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
     "autoprefixer": "^10.4.7",
@@ -75,15 +75,15 @@
     "parcel": "^2.6.2",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "size-limit": "^7.0.8",
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.4"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css,md,json,html,scss,sass}": [
